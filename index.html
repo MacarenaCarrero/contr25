@@ -3,10 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Document</title>
   </head>
   <body>
+    <div class="container">
+      <div class="password" id="password"></div>
+      <p class="length" id="lengthPass">LENGTH:</p>
+      <div class="box2" id="box2">
+        <p class="text">4</p>
+        <input
+          class="range"
+          id="range"
+          type="range"
+          min="4"
+          max="32"
+          step="1"
+          value="4"
+        />
+        <p class="text">32</p>
+      </div>
+      <div class="boxes box3" id="box3">
+        <p class="text">Include Uppercase</p>
+        <input class="checkbox" id="checkbox1" type="checkbox" />
+        <label for="checkbox1" class="label"></label>
+      </div>
+      <div class="boxes box4" id="box4">
+        <p class="text">Include Lowercase</p>
+        <input class="checkbox" id="checkbox2" type="checkbox" />
+        <label for="checkbox2" class="label"></label>
+      </div>
+      <div class="boxes box5" id="box5">
+        <p class="text">Include Numbers</p>
+        <input class="checkbox" id="checkbox3" type="checkbox" />
+        <label for="checkbox3" class="label"></label>
+      </div>
+      <div class="boxes box6" id="box6">
+        <p class="text">Include Symbols</p>
+        <input class="checkbox" id="checkbox4" type="checkbox" />
+        <label for="checkbox4" class="label"></label>
+      </div>
+      <div class="box7" id="box7">
+        <button class="botoncito" disabled id="generatePassword">
+          Generate Password
+        </button>
+      </div>
+    </div>
     <script src="./js/scripts.js"></script>
   </body>
 </html>

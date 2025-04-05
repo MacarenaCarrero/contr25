@@ -20,5 +20,115 @@ nav ul {
 }
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Lexend Deca", sans-serif;
+  display: flex;
+justify-content: center;
+background-color: rgb(255, 190, 255);
+background-image: url(../assets/descarga.jpeg);
+background-repeat: no-repeat;
+background-size: cover;
 }
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+  align-items: center;
+  flex-direction: column;
+  width: 28.125rem;
+  height: 31.25rem;
+  margin-top: 9.375rem;
+  background-color: rgba(248, 247, 247, 0.884);
+  border-radius: 1.875rem;
+}
+.length{
+  display: flex;
+  margin-right: 15.625rem;
+ 
+}
+.text{
+  margin: 0;
+}
+.range{
+  width: 12.5rem;
+  height: 0.3125rem;
+  margin-right: 1.5625rem;
+  margin-left: 1.5625rem;
+}
+.password{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 21.875rem;
+  height: 3.125rem;
+  background-color: rgb(255, 190, 255);
+  border-radius: 0.5rem;
+}
+.box2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 21.875rem;
+  height: 3.125rem;
+  background-color: rgb(255, 190, 255);
+  border-radius: 0.5rem;
+  color: black;
+  margin-bottom: 0.625rem;
+}
+.boxes{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  width: 21.875rem;
+  height: 3.125rem;
+ background-color: rgb(255, 190, 255);
+ border-radius: 0.5rem;
+ margin-bottom: 0.625rem;
+}
+
+.box7{
+  display: flex;
+  justify-content: center;
+  width: 21.875rem;
+  height: 3.125rem;
+  
+}
+.botoncito{
+  border-radius: 0.5rem;
+  background-color: rgb(255, 190, 255) ;
+  border: none;
+  box-shadow: #ff32e4 0.125rem 0.25rem 0.25rem;
+  font-family: inherit;
+}
+
+.checkbox{
+ display: none;
+
+}
+.label{
+  position: relative;
+  width: 60px;
+  height: 30px;
+  border-radius:1.25rem;
+  background-color:#fffbfb;
+  
+  }
+  .label::before{
+    content: "";
+    position: absolute;
+    width: 1.875rem;
+    height:1.875rem;
+    border-radius: 50%;
+    box-shadow:#ff32e4 0 0 4px;
+    background-color:  rgb(255, 190, 255);
+    translate:0;
+    transition:  0.4s ease;
+  }
+.checkbox:checked + .label {
+ background-color:#ff32e4;
+}
+.checkbox:checked + .label::before {
+ translate: 100%;
+}
+
